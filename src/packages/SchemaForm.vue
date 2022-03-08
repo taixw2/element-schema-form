@@ -4,6 +4,7 @@
       class="schema-form__row"
       v-bind="layout"
       v-for="(row, rowIndex) in formatedSchema"
+      :key="row.key"
     >
       <template v-for="(col, colIndex) in row">
         <el-col v-bind="col.colGrid" v-if="!col.hide" :key="colIndex">
