@@ -3,7 +3,7 @@
     <el-row
       class="schema-form__row"
       v-bind="layout"
-      v-for="(row, rowIndex) in formatedSchema"
+      v-for="(row) in formatedSchema"
       :key="row.key"
     >
       <template v-for="(col, colIndex) in row">
